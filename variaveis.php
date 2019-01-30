@@ -10,11 +10,12 @@
 		$nome = 'Lino Veloso';
 
 		//int
-		$idade = 25;
+		$idade = '25';
 		//float
 		$peso = 71.5;
 		//boolean
-		$fumante_sn = false;
+		$fumante_sn = false; //(true = 1) or (false = vazio)
+
 	 ?>
 
 	 <h1>Ficha Cadastral</h1>
