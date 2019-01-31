@@ -9,9 +9,19 @@
 
 	$nome = 'Lino bonitão';
 	$cor = 'azul';
-	$atividadePreferida = 'Andar de bike';
+	$atividadePreferida = 'andar de bike';
 
-		echo 'Olá '. $nome . ' , vi aqui que você gosta da cor ' . $cor . ' e você gosta de '. $atividadePreferida;
+		echo 'Olá '. $nome . ', vi aqui que você gosta da cor ' . $cor . ' e você gosta de '. $atividadePreferida;
+	 
+		//aspas duplas
+
+		echo "<br/>";
+
+		echo "Olá $nome, vi aqui que você gosta da cor $cor e você gosta de $atividadePreferida";
+
+
+
+
 	 ?>
 	</body>
 </html>
