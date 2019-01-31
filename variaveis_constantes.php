@@ -14,7 +14,7 @@
 
 		// ...
 		// lógica 
-		define('BD_URL', 'sei lá');
+		//define('BD_URL', 'sei lá');
 
 		echo BD_URL . '<br />';
 		echo BD_USUARIO . '<br />';
