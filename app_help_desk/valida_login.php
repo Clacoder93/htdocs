@@ -1,9 +1,20 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>valida login</title>
-</head>
-<body>
-<h1>This is just a test</h1>
-</body>
-</html>
+<?php
+
+//
+/*
+print_r($_GET);
+echo "<br/>";
+echo $_GET['email'];
+echo "<br/>";
+echo $_GET['senha'];
+*/
+
+
+print_r($_POST);
+echo "<br/>";
+echo $_POST['email'];
+echo "<br/>";
+echo $_POST['senha'];
+
+
+?>
