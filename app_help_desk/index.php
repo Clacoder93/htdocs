@@ -1,3 +1,4 @@
+
 <html>
 <head>
   <meta charset="utf-8" />
@@ -38,6 +39,9 @@
               </div>
               <div class="form-group">
                 <input name="senha" type="password" class="form-control" placeholder="Senha">
+                <?php 
+                echo ($_GET['login']);
+                ?>
               </div>
               <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
             </form>
