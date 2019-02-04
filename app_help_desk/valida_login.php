@@ -1,4 +1,10 @@
 <?php
+session_start();
+
+$_SESSION['x'] = 'Oi só um teste mesmo';
+print_r($_SESSION);
+
+echo "<hr>";
 
 //usuários do sistema 
 $usuarios_app = array(
@@ -19,10 +25,10 @@ $usuarios_app = array(
 	echo $_GET['senha'];
 */
 //variavem que verifica se a autenticação foi autenticada.
-$user_autenticado = false;
+	$user_autenticado = false;
 
-echo '<pre>';
-foreach ($usuarios_app as $user) {
+	echo '<pre>';
+	foreach ($usuarios_app as $user) {
 //apenas um estudo de como concatenar
 /*
 	echo 'Usuário app: '. $user['email'] . ' / '  . $user['senha'];
@@ -36,8 +42,10 @@ foreach ($usuarios_app as $user) {
 }
 
 if ($user_autenticado) {
+	$_SESSION['autenticado'] = 'SIM';
 	echo "Usuário autenticado com sucesso";
 } else {
+	$_SESSION['autenticado'] = 'NAO';
 	header('Location: index.php?login=erro');
 //	echo "Erro na autenticação do usuário";
 }
@@ -53,4 +61,4 @@ echo '</pre>';
 	echo $_POST['senha'];
 */
 
-?>
+	?>

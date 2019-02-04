@@ -1,3 +1,10 @@
+<?php 
+session_start();
+
+echo 'Está autenticado? ' . $_SESSION['autenticado'];
+
+?>
+
 <html>
   <head>
     <meta charset="utf-8" />
