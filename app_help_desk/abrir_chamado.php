@@ -1,8 +1,8 @@
 <?php 
 session_start();
 
-echo 'Está autenticado? ' . $_SESSION['autenticado'];
-
+if (isset($_SESSION['autenticado']) ||$_SESSION['autenticado'] != 'SIM') {
+  header('Location: index.php?login=notAuthenticated');
  ?>
 
 <html>

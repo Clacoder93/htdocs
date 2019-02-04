@@ -48,7 +48,14 @@ session_start();
                     Usuário ou senha inválido(s)
                   </div>
                   <? 
-                } ?>
+                } 
+                if (isset($_GET['login']) && $_GET['login']=='notAuthenticated') 
+                {?>
+                  <div class="text-danger">
+                    Usuário não autenticado
+                  </div>
+                  <?
+                }?>
               </div>
               <button class="btn btn-lg btn-info btn-block" type="submit">Entrar</button>
             </form>
