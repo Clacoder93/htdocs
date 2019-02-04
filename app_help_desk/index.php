@@ -52,7 +52,7 @@ session_start();
                 if (isset($_GET['login']) && $_GET['login']=='notAuthenticated') 
                 {?>
                   <div class="text-danger">
-                    Usuário não autenticado
+                    Usuário não autenticado, será necessário efetuar o login.
                   </div>
                   <?
                 }?>
