@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-$_SESSION['x'] = 'Oi só um teste mesmo';
 print_r($_SESSION);
 
 echo "<hr>";
